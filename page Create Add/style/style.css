@@ -1,0 +1,1785 @@
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main header {
+  width: 100%;
+  height: 99px;
+  border-bottom: 2px solid rgba(63, 56, 53, 0.3);
+  background: #F2F2F2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+main header .container {
+  display: none;
+  margin: 0 auto;
+}
+main header .container .navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main header .container .navbar a {
+  color: white;
+  text-decoration: none;
+}
+main header .container .navbar .nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+main header .container .navbar .nav-menu li {
+  list-style: none;
+}
+main header .container .navbar .nav-menu a {
+  color: black;
+  text-decoration: none;
+}
+main header .container .hamburger {
+  display: none;
+  cursor: pointer;
+}
+main header .container .hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease;
+  background-color: black;
+  border-radius: 20px;
+}
+main header .map_box_header {
+  width: 101px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main header .map_box_header svg {
+  margin: 10px;
+}
+main header .logo_box a {
+  width: 270px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main header .logo_box a .bar {
+  margin: 10px;
+}
+main header .btn_header {
+  width: 243px;
+  height: 52px;
+  border-radius: 8px;
+  background: #7EAA92;
+  color: #fff;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+  cursor: pointer;
+}
+main header .sign_box {
+  width: 400px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+main header .sign_box .karmir {
+  width: 16.387px;
+  height: 16.387px;
+  background: red;
+  border-radius: 50%;
+  position: relative;
+  right: 23px;
+  bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main header .sign_box .karmir span {
+  color: #fff;
+}
+main header .sign_box .dropdown-toggle {
+  width: 55px;
+  height: 55px;
+  background: none;
+  border: none;
+}
+main header .btn-group .dropdown-menu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+main header .btn-group .dropdown-menu {
+  width: 200px;
+  height: 120px;
+}
+main .down_header {
+  width: 100%;
+  height: 77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F2F2F2;
+}
+main .down_header .menu {
+  width: 562px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main .down_header .menu a {
+  color: #3F3835;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  text-decoration: none;
+}
+main .down_header .menu .o_nas {
+  color: #7EAA92;
+}
+@media screen and (max-width: 1920px) {
+  main .sign_box .btn-group {
+    display: none;
+  }
+  main .map_box_header .media {
+    display: none;
+  }
+}
+@media screen and (max-width: 840px) {
+  main header .btn_header {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 830px) {
+  main header {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  main header .logo_box {
+    width: 200px;
+  }
+  main header .logo_box a {
+    width: 200px;
+  }
+  main header .logo_box .bar {
+    width: 150px;
+  }
+  main header .btn_header {
+    width: 135px;
+    height: 50px;
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  main header .sign_box .karmir {
+    display: none;
+  }
+  main header .logo_box {
+    position: relative;
+    right: 70px;
+  }
+  main header .sign_box .user {
+    position: relative;
+    left: 50px;
+  }
+  main .down_header {
+    display: none;
+  }
+  main header .logo_box {
+    width: 50px;
+  }
+  main header .logo_box a {
+    display: none;
+  }
+  main header .container {
+    display: flex;
+    width: 10%;
+  }
+  main header .map_box_header {
+    width: 50px;
+  }
+  main .map_box_header svg {
+    display: none;
+  }
+  main .map_box_header span {
+    display: none;
+  }
+  main .map_box_header .media {
+    display: flex;
+  }
+  main header .container .hamburger {
+    display: block;
+    position: relative;
+    left: -50px;
+  }
+  main header .sign_box {
+    width: 80px;
+  }
+  main header .sign_box span {
+    display: none;
+  }
+  main header .sign_box .btn_header {
+    display: none;
+  }
+  main .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  main .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  main .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  main header .nav-menu {
+    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 100px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 10;
+  }
+  main header .nav-menu .nav-item {
+    margin: 16px 0;
+  }
+  main header .nav-menu.active {
+    left: 6px;
+    width: 98%;
+    height: 500px;
+    background: var(--color-main-color-green, #7EAA92);
+  }
+  main header .logo_box {
+    width: 50px;
+  }
+  main header .logo_box .bar {
+    display: none;
+  }
+  main header .btn_header {
+    width: 243px;
+    height: 52px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 560px) {
+  main header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+  }
+  main header .btn_header {
+    display: none;
+  }
+  main header .sign_box {
+    width: 100px;
+  }
+  main .sign_box .btn-group {
+    display: flex;
+  }
+  main header .logo_box svg {
+    position: relative;
+    right: 0px;
+  }
+}
+@media screen and (max-width: 490px) {
+  main header .map_box_header span {
+    display: none;
+  }
+  main header .map_box_header svg {
+    position: relative;
+    left: 0px;
+  }
+  main header .logo_box svg {
+    position: relative;
+    left: -90px;
+  }
+}
+@media screen and (max-width: 440px) {
+  main header {
+    padding: 5px;
+  }
+  main header .map_box_header span {
+    display: none;
+  }
+  main header .map_box_header svg {
+    display: none;
+  }
+  main header .btn_header {
+    display: none;
+  }
+  main header .sign_box span {
+    display: none;
+  }
+  main .sign_box .btn-group {
+    display: flex;
+  }
+}
+main .newAnnouncementPage {
+  width: 100%;
+  min-height: 1600px;
+  background: #F2F2F2;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  gap: 50px;
+}
+main .newAnnouncementPage .glavnoe_SozdtaObyavlenieBox {
+  width: 349px;
+  height: 69px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  left: -520px;
+}
+main .newAnnouncementPage .glavnoe_SozdtaObyavlenieBox a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main .newAnnouncementPage .glavnoe_SozdtaObyavlenieBox a span {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 69px;
+  letter-spacing: 0.25px;
+  text-align: center;
+  color: rgba(89, 79, 75, 0.8);
+}
+main .newAnnouncementPage .novoe_obyavlenieBox {
+  width: 100%;
+  height: 120px;
+  background: #DBE7E2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+main .newAnnouncementPage .novoe_obyavlenieBox span {
+  font-size: 32px;
+  font-family: Lato;
+  line-height: 69px;
+  letter-spacing: 0.25px;
+  font-weight: 500;
+  color: #3F3835;
+}
+main .newAnnouncementPage .novoe_obyavlenieBox .dogAndCatImg {
+  width: 296px;
+  height: 261px;
+  position: absolute;
+  right: 200px;
+  bottom: -20px;
+}
+main .newAnnouncementPage .downBoxAll {
+  width: 1400px;
+  min-height: 1073px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+main .newAnnouncementPage .downBoxAll .leftForm {
+  width: 500px;
+  min-height: 603px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .catAndDogBoxForm {
+  width: 455px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .catAndDogBoxForm .petBoxForm {
+  width: 159px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .catAndDogBoxForm .petBoxForm span {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: Lato;
+  line-height: 32.51px;
+  color: #878281;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .catAndDogBoxForm .petBoxForm .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .catAndDogBoxForm .petBoxForm .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .catAndDogBoxForm .petBoxForm .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  border: 1px solid rgba(63, 56, 53, 0.2);
+  transition: 0.4s;
+  border-radius: 34px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .catAndDogBoxForm .petBoxForm .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #7EAA92;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .catAndDogBoxForm .petBoxForm input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .catAndDogBoxForm .petBoxForm input:checked + .slider:before {
+  transform: translateX(26px);
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_1 {
+  width: 451px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  left: 10px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_1 .vkakomGorode {
+  width: 431px;
+  height: 58px;
+  background: #F8F5F5;
+  border: 2px solid rgba(63, 56, 53, 0.1490196078);
+  cursor: pointer;
+  border-radius: 8px;
+  outline: none;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_1 .tipObyavlenie {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  font-family: Lato;
+  color: rgba(63, 56, 53, 0.8);
+  gap: 10px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_ {
+  width: 451px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  left: 10px;
+  display: none;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_ .vkakomGorode {
+  width: 431px;
+  height: 58px;
+  background: #F8F5F5;
+  border: 2px solid rgba(63, 56, 53, 0.1490196078);
+  cursor: pointer;
+  border-radius: 8px;
+  outline: none;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_ .tipObyavlenie {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  font-family: Lato;
+  color: rgba(63, 56, 53, 0.8);
+  gap: 10px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_2 {
+  width: 450px;
+  height: 90px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 15px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_2 .pol {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  font-family: Lato;
+  color: rgba(63, 56, 53, 0.8);
+  position: relative;
+  left: 10px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_2 .maleOrFemale {
+  width: 451px;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_2 .maleOrFemale .razniyPolBox {
+  width: 122px;
+  height: 54px;
+  border-radius: 8px;
+  border: 2px solid rgba(63, 56, 53, 0.1490196078);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_2 .maleOrFemale .razniyPolBox .material-symbols-outlined {
+  color: rgba(63, 56, 53, 0.7490196078);
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_2 .maleOrFemale .razniyPolBox .razniyPol {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: Lato;
+  font-weight: 400;
+  color: rgba(63, 56, 53, 0.7490196078);
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_2 .maleOrFemale .malchikBox {
+  width: 122px;
+  height: 54px;
+  border-radius: 8px;
+  border: 2px solid rgba(63, 56, 53, 0.1490196078);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_2 .maleOrFemale .malchikBox .material-symbols-outlined {
+  color: rgba(63, 56, 53, 0.7490196078);
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_2 .maleOrFemale .malchikBox .boy {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Lato;
+  font-weight: 400;
+  color: rgba(63, 56, 53, 0.7490196078);
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_2 .maleOrFemale .devochkaBox {
+  width: 122px;
+  height: 54px;
+  border-radius: 8px;
+  border: 2px solid rgba(63, 56, 53, 0.1490196078);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_2 .maleOrFemale .devochkaBox .material-symbols-outlined {
+  color: rgba(63, 56, 53, 0.7490196078);
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_2 .maleOrFemale .devochkaBox .devochka {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Lato;
+  font-weight: 400;
+  color: rgba(63, 56, 53, 0.7490196078);
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_3 {
+  width: 450px;
+  height: 90px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 15px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_3 .dateBox {
+  width: 150px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  left: 10px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_3 .dateBox .material-symbols-outlined {
+  color: rgba(63, 56, 53, 0.7490196078);
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_3 .dataBox {
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_3 .dataBox .mesacDenGod {
+  width: 342px;
+  height: 46px;
+  border-radius: 8px;
+  border: 2px solid rgba(63, 56, 53, 0.1490196078);
+  display: none;
+  padding: 12px 101px 12px 101px;
+  background: #F8F5F5;
+  outline: none;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_3 .dataBox .mesacDenGod::-moz-placeholder {
+  color: rgba(63, 56, 53, 0.6);
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_3 .dataBox .mesacDenGod::placeholder {
+  color: rgba(63, 56, 53, 0.6);
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_3 .dataBox .day {
+  width: 112px;
+  height: 54px;
+  background-color: #fff;
+  border: 2px solid rgba(63, 56, 53, 0.1490196078);
+  cursor: pointer;
+  border-radius: 8px;
+  outline: none;
+  padding: 16px 18px 16px 18px;
+  color: rgba(63, 56, 53, 0.6);
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_3 .tipObyavlenie {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  font-family: Lato;
+  color: rgba(63, 56, 53, 0.8);
+  gap: 10px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_4 {
+  width: 235px;
+  height: 95px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  left: 15px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_4 .material-symbols-outlined {
+  display: none;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_4 .vkakomGorode {
+  width: 235px;
+  height: 58px;
+  background: #F8F5F5;
+  border: 2px solid rgba(63, 56, 53, 0.1490196078);
+  cursor: pointer;
+  border-radius: 8px;
+  outline: none;
+  padding: 16px 18px 16px 18px;
+  color: rgba(63, 56, 53, 0.6);
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_4 .vkakomGorode input {
+  width: 235px;
+  height: 58px;
+  background: none;
+  border: none;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_4 .tipObyavlenie {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  font-family: Lato;
+  color: rgba(63, 56, 53, 0.8);
+  gap: 10px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_5 {
+  width: 451px;
+  height: 168px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  left: 10px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_5 .opisanie {
+  width: 431px;
+  height: 131px;
+  background: #F8F5F5;
+  border: 2px solid rgba(63, 56, 53, 0.1490196078);
+  cursor: pointer;
+  border-radius: 8px;
+  outline: none;
+  padding: 16px 18px 16px 18px;
+  color: rgba(63, 56, 53, 0.6);
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_5 .tipObyavlenie {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  font-family: Lato;
+  color: rgba(63, 56, 53, 0.8);
+  gap: 10px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_6 {
+  width: 448px;
+  height: 63px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  left: 15px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_6 .allDocumnetBox {
+  width: 448px;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  position: relative;
+  left: -15px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_6 .allDocumnetBox .docBox {
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_6 .allDocumnetBox .docBox label {
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 14px;
+  font-family: Lato;
+  line-height: 22px;
+  font-weight: 400;
+  color: rgba(63, 56, 53, 0.6);
+  gap: 10px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_6 .allDocumnetBox .docBox span {
+  font-size: 14px;
+  font-family: Lato;
+  line-height: 22px;
+  font-weight: 400;
+  color: rgba(63, 56, 53, 0.6);
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_6 .allDocumnetBox .docBox .selectBox {
+  width: 25px;
+  height: 25px;
+  border: 2px solid rgba(63, 56, 53, 0.5019607843);
+  border-radius: 8px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_6 .tipObyavlenie {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  font-family: Lato;
+  color: rgba(63, 56, 53, 0.8);
+  gap: 10px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_6Dop {
+  width: 448px;
+  height: 63px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  left: 15px;
+  display: none;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_6Dop .allDocumnetBoxDisp {
+  width: 448px;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  position: relative;
+  left: -15px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_6Dop .allDocumnetBoxDisp .docBoxDisp {
+  width: 140px;
+  height: 25px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_6Dop .allDocumnetBoxDisp .docBoxDisp label {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
+  font-size: 14px;
+  font-family: Lato;
+  line-height: 22px;
+  font-weight: 400;
+  color: rgba(63, 56, 53, 0.6);
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_6Dop .allDocumnetBoxDisp .docBoxDisp .selectBox {
+  width: 25px;
+  height: 25px;
+  border: 2px solid rgba(63, 56, 53, 0.5019607843);
+  border-radius: 8px;
+}
+main .newAnnouncementPage .downBoxAll .leftForm .f_box_6Dop .tipObyavlenieDop {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  font-family: Lato;
+  color: rgba(63, 56, 53, 0.8);
+  gap: 10px;
+  position: relative;
+  left: -5px;
+}
+main .newAnnouncementPage .downBoxAll .rightBox {
+  width: 874px;
+  height: 703px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+main .newAnnouncementPage .downBoxAll .rightBox .downloadBox {
+  width: 874px;
+  height: 567px;
+  border: 2px solid rgba(63, 56, 53, 0.2);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .newAnnouncementPage .downBoxAll .rightBox .downloadBox h1 {
+  font-size: 32px;
+  font-family: Lato;
+  font-weight: 500;
+  line-height: 69px;
+  letter-spacing: 0.25px;
+  color: rgba(63, 56, 53, 0.6);
+}
+main .newAnnouncementPage .downBoxAll .rightBox .dopolnitelniyAll {
+  width: 874px;
+  height: 164px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .newAnnouncementPage .downBoxAll .rightBox .dopolnitelniyAll .dopolniteloneBox {
+  width: 874px;
+  height: 164px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .newAnnouncementPage .downBoxAll .rightBox .dopolnitelniyAll .dopolniteloneBox .dopolnitelnoeFoto {
+  width: 258px;
+  height: 164px;
+  border: 2px solid rgba(63, 56, 53, 0.2);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .newAnnouncementPage .downBoxAll .rightBox .dopolnitelniyAll .dopolniteloneBox .dopolnitelnoeFoto span {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 69px;
+  letter-spacing: 0.25px;
+  font-family: Lato;
+  color: rgba(63, 56, 53, 0.6);
+}
+main .newAnnouncementPage .downBoxAll .rightBox .alldaplnitelnoe {
+  width: 864px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .newAnnouncementPage .downBoxAll .rightBox .alldaplnitelnoe .dapolnitelnoeDannieBox {
+  width: 439px;
+  height: 127px;
+}
+main .newAnnouncementPage .downBoxAll .rightBox .alldaplnitelnoe .dapolnitelnoeDannieBox .dapolnitelnoeDannieSpan {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Lato;
+  line-height: 22px;
+  color: rgba(63, 56, 53, 0.8);
+}
+main .newAnnouncementPage .downBoxAll .rightBox .alldaplnitelnoe .dapolnitelnoeDannieBox .dannieTipe {
+  width: 439px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+main .newAnnouncementPage .downBoxAll .rightBox .alldaplnitelnoe .dapolnitelnoeDannieBox .dannieTipe .UpBox {
+  width: 439px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .newAnnouncementPage .downBoxAll .rightBox .alldaplnitelnoe .dapolnitelnoeDannieBox .dannieTipe .UpBox .Tipe {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+main .newAnnouncementPage .downBoxAll .rightBox .alldaplnitelnoe .dapolnitelnoeDannieBox .dannieTipe .UpBox .Tipe label {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(63, 56, 53, 0.6);
+}
+main .newAnnouncementPage .downBoxAll .rightBox .alldaplnitelnoe .dapolnitelnoeDannieBox .dannieTipe .downBox {
+  width: 439px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .newAnnouncementPage .downBoxAll .rightBox .alldaplnitelnoe .dapolnitelnoeDannieBox .dannieTipe .downBox .Tipe {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+main .newAnnouncementPage .downBoxAll .rightBox .alldaplnitelnoe .dapolnitelnoeDannieBox .dannieTipe .downBox .Tipe label {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(63, 56, 53, 0.6);
+}
+main .newAnnouncementPage .downBoxAll .rightBox .alldaplnitelnoe .dapolnitelnoeDannieBox .dannieTipe .selectBox {
+  width: 25px;
+  height: 25px;
+  border: 2px solid rgba(63, 56, 53, 0.5019607843);
+  border-radius: 8px;
+}
+main .newAnnouncementPage .downBoxAll .rightBox .predpochitanniySposob {
+  width: 289px;
+  height: 185px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+main .newAnnouncementPage .downBoxAll .rightBox .predpochitanniySposob .selectTextBox {
+  width: 240px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .newAnnouncementPage .downBoxAll .rightBox .predpochitanniySposob .selectTextBox label {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+}
+main .newAnnouncementPage .downBoxAll .rightBox .predpochitanniySposob .selectTextBox .TolkoMobilniy {
+  position: relative;
+  left: -20px;
+}
+main .newAnnouncementPage .downBoxAll .rightBox .predpochitanniySposob .selectTextBox .TolkoSobsheniy {
+  position: relative;
+  left: -20px;
+}
+main .newAnnouncementPage .downBoxAll .rightBox .predpochitanniySposob .selectTextBox input {
+  width: 18px;
+  height: 18px;
+}
+main .newAnnouncementPage .sozdatObyavlenieBtn {
+  width: 571px;
+  height: 65px;
+  padding: 23px 73px 23px 73px;
+  background: #7EAA92;
+  border: none;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-family: Lato;
+  line-height: 18.4px;
+  letter-spacing: 0.75px;
+  text-align: center;
+}
+@media screen and (max-width: 1920px) {
+  main .newAnnouncementPage .glavnoe_SozdtaObyavlenieBox {
+    position: relative;
+    left: -700px;
+  }
+}
+@media screen and (max-width: 1770px) {
+  main .newAnnouncementPage .glavnoe_SozdtaObyavlenieBox {
+    position: relative;
+    left: -500px;
+  }
+}
+@media screen and (max-width: 1420px) {
+  main .newAnnouncementPage .downBoxAll .rightBox {
+    width: 700px;
+  }
+  main .newAnnouncementPage .downBoxAll .rightBox .downloadBox {
+    width: 700px;
+  }
+  main .newAnnouncementPage .downBoxAll {
+    width: 1220px;
+  }
+  main .newAnnouncementPage .downBoxAll .rightBox .dopolnitelniyAll .dopolniteloneBox .dopolnitelnoeFoto {
+    width: 200px;
+    height: 130px;
+  }
+  main .newAnnouncementPage .downBoxAll .rightBox .dopolnitelniyAll {
+    width: 700px;
+  }
+  main .newAnnouncementPage .downBoxAll .rightBox .alldaplnitelnoe {
+    width: 700px;
+  }
+  main .newAnnouncementPage .downBoxAll .rightBox .alldaplnitelnoe .dapolnitelnoeDannieBox {
+    width: 370px;
+  }
+  main .newAnnouncementPage .downBoxAll .rightBox .alldaplnitelnoe .dapolnitelnoeDannieBox .dannieTipe .UpBox {
+    width: 370px;
+  }
+  main .newAnnouncementPage .downBoxAll .rightBox .alldaplnitelnoe .dapolnitelnoeDannieBox .dannieTipe .downBox {
+    width: 370px;
+  }
+  main .newAnnouncementPage .downBoxAll .rightBox .alldaplnitelnoe .dapolnitelnoeDannieBox .dapolnitelnoeDannieSpan {
+    position: relative;
+    left: 35px;
+  }
+  main .newAnnouncementPage .glavnoe_SozdtaObyavlenieBox {
+    position: relative;
+    left: -400px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  main .newAnnouncementPage .downBoxAll .rightBox .downloadBox {
+    width: 500px;
+  }
+  main .newAnnouncementPage .downBoxAll .rightBox .dopolnitelniyAll {
+    width: 500px;
+  }
+  main .newAnnouncementPage .downBoxAll .rightBox .dopolnitelniyAll .dopolniteloneBox .dopolnitelnoeFoto {
+    width: 150px;
+  }
+  main .newAnnouncementPage .downBoxAll .rightBox .dopolnitelniyAll .dopolniteloneBox .dopolnitelnoeFoto span {
+    font-size: 14px;
+  }
+  main .newAnnouncementPage .downBoxAll {
+    width: 1120px;
+  }
+  main .newAnnouncementPage .downBoxAll .rightBox {
+    width: 600px;
+  }
+  main .newAnnouncementPage .downBoxAll .rightBox .alldaplnitelnoe {
+    width: 600px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  main .newAnnouncementPage .downBoxAll .rightBox .alldaplnitelnoe .dapolnitelnoeDannieBox {
+    width: 300px;
+  }
+  main .newAnnouncementPage .downBoxAll .rightBox .alldaplnitelnoe .dapolnitelnoeDannieBox .dannieTipe {
+    width: 300px;
+    position: relative;
+    top: 0px;
+  }
+  main .newAnnouncementPage .downBoxAll .rightBox .alldaplnitelnoe .dapolnitelnoeDannieBox .dannieTipe .UpBox {
+    width: 250px;
+  }
+  main .newAnnouncementPage .downBoxAll .rightBox .alldaplnitelnoe .dapolnitelnoeDannieBox .dannieTipe .downBox {
+    width: 250px;
+  }
+  main .newAnnouncementPage .novoe_obyavlenieBox .dogAndCatImg {
+    position: absolute;
+    right: 130px;
+  }
+  main .newAnnouncementPage .glavnoe_SozdtaObyavlenieBox {
+    position: relative;
+    left: -350px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  main .newAnnouncementPage .downBoxAll .rightBox {
+    width: 500px;
+  }
+  main .newAnnouncementPage .glavnoe_SozdtaObyavlenieBox {
+    position: relative;
+    left: 0px;
+  }
+  main .newAnnouncementPage .downBoxAll {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  main .newAnnouncementPage .novoe_obyavlenieBox {
+    background: none;
+    height: 50px;
+  }
+  main .newAnnouncementPage .novoe_obyavlenieBox .dogAndCatImg {
+    display: none;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_ {
+    display: flex;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .catAndDogBoxForm {
+    display: none;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_3 .dataBox {
+    width: 370px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_3 .dataBox .day {
+    display: none;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_3 .dataBox .mesacDenGod {
+    display: flex;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_4 {
+    height: 120px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_4 .material-symbols-outlined {
+    display: flex;
+    position: relative;
+    left: 210px;
+    color: rgba(63, 56, 53, 0.3019607843);
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_4 .tipObyavlenie {
+    position: relative;
+    top: 40px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_6 {
+    width: 150px;
+    height: 120px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_6 .allDocumnetBox {
+    width: 150px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_6 .allDocumnetBox {
+    position: relative;
+    left: 20px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_6Dop .allDocumnetBoxDisp {
+    width: 150px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_6Dop .allDocumnetBoxDisp {
+    position: relative;
+    left: 20px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_6Dop {
+    width: 200px;
+    height: 160px;
+    display: flex;
+    position: relative;
+    left: 20px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_6Dop .allDocumnetBoxDisp {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_6Dop .tipObyavlenie {
+    width: 200px;
+  }
+  main .newAnnouncementPage .sozdatObyavlenieBtn {
+    width: 400px;
+  }
+  main .newAnnouncementPage .downBoxAll .rightBox .dopolnitelniyAll {
+    display: none;
+  }
+}
+@media screen and (max-width: 725px) {
+  main .newAnnouncementPage .downBoxAll .rightBox {
+    width: 430px;
+  }
+  main .newAnnouncementPage .downBoxAll .rightBox .downloadBox {
+    width: 400px;
+    height: 400px;
+  }
+  main .newAnnouncementPage .downBoxAll .rightBox .alldaplnitelnoe {
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .newAnnouncementPage .downBoxAll {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm {
+    position: relative;
+    left: 0px;
+  }
+}
+@media screen and (max-width: 530px) {
+  main .newAnnouncementPage .downBoxAll .leftForm {
+    width: 430px;
+  }
+  main .newAnnouncementPage .downBoxAll .rightBox .downloadBox {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: 15px;
+    top: 20px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_5 {
+    width: 400px;
+    position: relative;
+    left: 15px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_5 .opisanie {
+    width: 400px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_1 {
+    width: 400px;
+    position: relative;
+    left: 15px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_1 .vkakomGorode {
+    width: 400px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_ {
+    width: 400px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_ .vkakomGorode {
+    width: 400px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_2 .maleOrFemale {
+    width: 400px;
+    position: relative;
+    left: 5px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_2 .pol {
+    position: relative;
+    left: 10px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_2 {
+    width: 400px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_3 {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 445px) {
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_5 {
+    width: 350px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_5 .opisanie {
+    width: 350px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_1 {
+    width: 350px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_1 .vkakomGorode {
+    width: 350px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_ {
+    width: 350px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_ .vkakomGorode {
+    width: 350px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_2 .maleOrFemale {
+    width: 350px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_2 {
+    width: 350px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_3 {
+    width: 350px;
+  }
+  main .newAnnouncementPage .downBoxAll .rightBox {
+    width: 340px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    position: relative;
+    left: -10px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm {
+    width: 340px;
+    position: relative;
+    left: -20px;
+  }
+  main .newAnnouncementPage .sozdatObyavlenieBtn {
+    width: 300px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 380px) {
+  main .newAnnouncementPage .downBoxAll .leftForm {
+    width: 340px;
+    position: relative;
+    left: -5px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_5 {
+    width: 320px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_5 .opisanie {
+    width: 320px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_1 {
+    width: 320px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_1 .vkakomGorode {
+    width: 320px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_ {
+    width: 320px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_ .vkakomGorode {
+    width: 320px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_2 .maleOrFemale {
+    width: 320px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_2 {
+    width: 320px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_3 {
+    width: 320px;
+  }
+  main .newAnnouncementPage .downBoxAll .leftForm .f_box_3 .dataBox .mesacDenGod {
+    width: 320px;
+  }
+}
+main footer {
+  width: 100%;
+  height: 270px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  border-top: 1px solid var(--Color-Main-color-text, #3F3835);
+  background: #F2F2F2;
+}
+main footer .footer_all {
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main footer .text_box_1_foot {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+main footer .text_box_1_foot img {
+  cursor: pointer;
+}
+main footer .text_box_1_foot .logo_box_foot {
+  width: 268px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  left: 50px;
+}
+main footer .text_box_2_foot {
+  width: 933px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main footer .text_box_2_foot .box_4_foot {
+  width: 200px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main footer .text_box_2_foot .box_4_foot a {
+  text-decoration: none;
+}
+main footer .text_box_2_foot .box_4_foot a span {
+  color: #3F3835;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+main footer .text_box_2_foot .box_1_foot {
+  width: 200px;
+  height: 220px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+main footer .text_box_2_foot .box_1_foot a {
+  text-decoration: none;
+}
+main footer .text_box_2_foot .box_1_foot a span {
+  color: #3F3835;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+main footer .text_box_2_foot .box_1_foot .karta_sayta {
+  color: #3F3835;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+main footer .text_box_2_foot .box_2_foot {
+  width: 200px;
+  height: 220px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+main footer .text_box_2_foot .box_2_foot a {
+  text-decoration: none;
+}
+main footer .text_box_2_foot .box_2_foot a span {
+  color: #3F3835;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+main footer .text_box_2_foot .box_2_foot .kontakti {
+  color: #3F3835;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+main footer .text_box_2_foot .box_3_foot {
+  width: 200px;
+  height: 220px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 20px;
+}
+main footer .text_box_2_foot .box_3_foot a {
+  text-decoration: none;
+}
+main footer .text_box_2_foot .box_3_foot a .na_nashu {
+  width: 230px;
+}
+main footer .text_box_2_foot .box_3_foot a .prisoedinay {
+  color: #3F3835;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+main footer .text_box_2_foot .box_3_foot a span {
+  color: #3F3835;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+main footer .text_box_2_foot .box_3_foot form input {
+  outline: none;
+  cursor: pointer;
+}
+main footer .text_box_2_foot .box_3_foot form .emailFootSvg {
+  position: relative;
+  top: -32px;
+  left: 210px;
+}
+main footer .text_box_2_foot .box_3_foot .vvedite_email {
+  width: 250px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid var(--color-main-color-text, #3F3835);
+  background: #DBE7E2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+main .foot {
+  width: 100%;
+  height: 41px;
+  border-top: 1px solid var(--color-main-color-text-75, rgba(63, 56, 53, 0.75));
+  background: #DBE7E2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 50px;
+}
+main .foot .icon {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .foot .text_box_2_foot .box_1_foot span {
+  color: #3F3835;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+main .foot a {
+  text-decoration: none;
+}
+main .foot a span {
+  color: rgba(63, 56, 53, 0.75);
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+@media screen and (max-width: 1920px) {
+  main .box_3_foot .podpishis {
+    display: none;
+  }
+  main .footer_all .text_box_2_foot .box_4_foot {
+    display: none;
+  }
+  main .icona_box {
+    display: none;
+  }
+}
+@media screen and (max-width: 1220px) {
+  main footer .text_box_2_foot {
+    width: 800px;
+    transition: 0.5s ease;
+  }
+}
+@media screen and (max-width: 1125px) {
+  main .footer_all .text_box_2_foot .box_3_foot form .vvedite_email {
+    width: 210px;
+    font-size: 14px;
+  }
+  main .footer_all .text_box_2_foot .box_3_foot form .emailFootSvg {
+    position: relative;
+    top: -32px;
+    left: 180px;
+  }
+  main footer .text_box_1_foot .logo_box_foot {
+    position: relative;
+    left: 20px;
+    transition: 0.5s ease;
+  }
+}
+@media screen and (max-width: 1030px) {
+  main .footer_all .logo_box_foot {
+    display: none;
+  }
+  main footer .text_box_2_foot {
+    width: 1000px;
+  }
+  main .footer_all {
+    flex-wrap: wrap;
+  }
+  main .footer_all img {
+    display: none;
+  }
+  main .footer_all .text_box_2_foot .box_3_foot form .vvedite_email {
+    width: 230px;
+  }
+  main footer .text_box_1_foot .logo_box_foot {
+    position: relative;
+    left: 400px;
+  }
+}
+@media screen and (max-width: 900px) {
+  main footer .text_box_1_foot .logo_box_foot {
+    position: relative;
+    left: 350px;
+  }
+}
+@media screen and (max-width: 740px) {
+  main footer .text_box_2_foot .box_3_foot .na_nashu {
+    width: 200px;
+  }
+  main footer .text_box_1_foot .logo_box_foot {
+    position: relative;
+    left: 220px;
+  }
+  main .footer_all .text_box_2_foot .box_3_foot .vvedite_email {
+    width: 210px;
+  }
+}
+@media screen and (max-width: 730px) {
+  main footer {
+    height: 400px;
+  }
+  main footer .foot {
+    display: none;
+  }
+  main .footer_all .text_box_2_foot .box_1_foot {
+    display: none;
+  }
+  main .footer_all .text_box_2_foot .box_2_foot {
+    display: none;
+  }
+  main .footer_all .text_box_2_foot .box_4_foot {
+    display: flex;
+  }
+  main .box_3_foot .na_nashu {
+    display: none;
+  }
+  main .footer_all .text_box_2_foot {
+    height: 400px;
+    flex-direction: column;
+  }
+  main .footer_all .text_box_2_foot .box_3_foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  main .footer_all .text_box_2_foot .box_3_foot .vvedite_email {
+    width: 300px;
+    height: 60px;
+    padding: 20px;
+  }
+  main .footer_all .text_box_2_foot .box_3_foot form .emailFootSvg {
+    position: relative;
+    top: -40px;
+    left: 190px;
+  }
+  main .text_box_2_foot .box_3_foot .podpishis {
+    width: 260px;
+    display: flex;
+    text-align: center;
+  }
+  main .icona_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 560px) {
+  main footer .text_box_1_foot .logo_box_foot {
+    position: relative;
+    left: 140px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main footer .text_box_1_foot .logo_box_foot {
+    position: relative;
+    left: 110px;
+  }
+}
+@media screen and (max-width: 430px) {
+  main footer .text_box_1_foot .logo_box_foot {
+    position: relative;
+    left: 80px;
+  }
+}
+@media screen and (max-width: 335px) {
+  main footer .text_box_1_foot .logo_box_foot {
+    position: relative;
+    left: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

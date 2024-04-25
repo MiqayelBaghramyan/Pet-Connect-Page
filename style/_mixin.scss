@@ -1,0 +1,98 @@
+@mixin zero() {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin flexCenter() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexBetween() {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flex_center_around() {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin flexStartBetween() {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+@mixin flexStartCenter() {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+@mixin flex_column() {
+    flex-direction: column;
+}
+
+@mixin center_start() {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+@mixin box_2_position() {
+    position: relative;
+    top: 10px;
+}
+
+@mixin cat_box_img_position() {
+    position: relative;
+    left: 70px;
+    top: 110px;
+}
+
+@mixin icon_box_f_page_position() {
+    position: relative;
+    left: 300px;
+    bottom: 450px;
+}
+
+
+@mixin logo_box_foot_position() {
+    position: relative;
+    left: 50px;
+}
+
+@mixin flex_center_evenly() {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@mixin flex_start_start() {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+@mixin padverjdyonniy_position() {
+    position: absolute;
+    top: 0;
+}
+
+
+@mixin slaq_mek_position() {
+    position: relative;
+    right: 230px;
+    top: 35px;
+}
+
+@mixin slaq_erku_position() {
+    position: relative;
+    left: 200px;
+    bottom: 35px;
+}

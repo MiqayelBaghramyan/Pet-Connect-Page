@@ -1,0 +1,1250 @@
+@import "./variables";
+@import "./mixin_media";
+@import "./mixin";
+@import "./color";
+@import "./fonts";
+
+
+
+* {
+    margin: $zero;
+    padding: $zero;
+    box-sizing: $border_box;
+}
+
+
+main {
+    width: $width_100_tokos;
+    height: auto;
+    @include flex_Center();
+    flex-direction: $flex_column;
+
+    header {
+        width: $width_100_tokos;
+        height: $header_height;
+        border-bottom: $header_border_bottom_2;
+        background: #F2F2F2;
+        @include flex_center_between();
+        padding: $padding_50;
+
+        .container {
+            display: none;
+            margin: 0 auto;
+
+
+            .navbar {
+                min-height: 70px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+                .nav-menu {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0px;
+
+                    li {
+                        list-style: none;
+                    }
+
+                    a {
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .hamburger {
+                display: none;
+                cursor: pointer;
+
+
+                .bar {
+                    display: block;
+                    width: 25px;
+                    height: 3px;
+                    margin: 5px auto;
+                    -webkit-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                    background-color: black;
+                    border-radius: 20px;
+                }
+            }
+
+        }
+
+
+
+        .map_box_header {
+            width: $map_box_header_width;
+            height: $map_box_header_height;
+            @include flex_Center();
+
+            svg {
+                margin: $margin_10;
+            }
+        }
+
+        .logo_box {
+            a {
+                width: $logo_box_width;
+                height: $logo_box_height;
+                @include flex_Center();
+
+                .bar {
+                    margin: $margin_10;
+                }
+            }
+        }
+
+        .btn_header {
+            width: $btn_header_width;
+            height: $btn_header_height;
+            border-radius: $border_radius_8;
+            background: $bg_color_green;
+            color: $color_white;
+            font-family: Lato;
+            font-size: $font_size_16;
+            font-style: $font_style_normal;
+            font-weight: $font_weight_500;
+            line-height: $line_height_22;
+            @include flex_Center();
+            gap: $gap_10;
+            border: $border_none;
+            cursor: $cursor_pointer;
+        }
+
+        .sign_box {
+            width: $sign_box_width;
+            height: $sign_box_height;
+            @include flex_Center();
+            gap: $gap_10;
+
+            .karmir {
+                width: 16.387px;
+                height: 16.387px;
+                background: red;
+                border-radius: 50%;
+                position: relative;
+                right: 23px;
+                bottom: 5px;
+                @include flex_Center();
+
+                span {
+                    color: $color_white;
+                }
+            }
+
+            .dropdown-toggle {
+                width: $dropdown_toggle_width;
+                height: $dropdown_toggle_height;
+                background: none;
+                border: none;
+            }
+        }
+
+        .btn-group .dropdown-menu a {
+            @include flex_Center();
+            color: $color_black;
+        }
+
+        .btn-group .dropdown-menu {
+            width: $dropdown_menu_width;
+            height: $dropdown_menu_height;
+        }
+    }
+
+    .down_header {
+        width: 100%;
+        height: $down_header_height;
+        @include flex_Center();
+        background: #F2F2F2;
+
+
+        .menu {
+            width: $menu_width;
+            height: $menu_height;
+            @include flex_center_around();
+
+            a {
+                color: $color_dark_gray;
+                font-family: Lato;
+                font-size: $font_size_16;
+                font-style: $font_style_normal;
+                font-weight: $font_weight_500;
+                line-height: $line_height_22;
+                text-decoration: $text_decoration_none;
+
+            }
+
+            .o_nas {
+                color: #7EAA92
+            }
+        }
+    }
+
+    @include header();
+
+    .newAnnouncementPage {
+        width: 100%;
+        min-height: 1600px;
+        background: #F2F2F2;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        gap: 50px;
+
+        .glavnoe_SozdtaObyavlenieBox {
+            width: 349px;
+            height: 69px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: relative;
+            left: -520px;
+
+
+            a {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                span {
+                    font-family: Lato;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 69px;
+                    letter-spacing: 0.25px;
+                    text-align: center;
+                    color: #594F4BCC;
+                }
+            }
+        }
+
+        .novoe_obyavlenieBox {
+            width: 100%;
+            height: 120px;
+            background: #DBE7E2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+
+            span {
+                font-size: 32px;
+                font-family: Lato;
+                line-height: 69px;
+                letter-spacing: 0.25px;
+                font-weight: 500;
+                color: #3F3835;
+            }
+
+            .dogAndCatImg {
+                width: 296px;
+                height: 261px;
+                position: absolute;
+                right: 200px;
+                bottom: -20px;
+            }
+        }
+
+        .downBoxAll {
+            width: 1400px;
+            min-height: 1073px;
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+
+            .leftForm {
+                width: 500px;
+                min-height: 603px;
+                display: flex;
+                align-items: start;
+                justify-content: center;
+                flex-direction: column;
+                gap: 20px;
+
+                .catAndDogBoxForm {
+                    width: 455px;
+                    height: 34px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+
+
+                    .petBoxForm {
+                        width: 159px;
+                        height: 34px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+
+                        span {
+                            font-size: 24px;
+                            font-weight: 500;
+                            font-family: Lato;
+                            line-height: 32.51px;
+                            color: #878281;
+                        }
+
+                        .switch {
+                            position: relative;
+                            display: inline-block;
+                            width: 60px;
+                            height: 34px;
+                        }
+
+                        .switch input {
+                            opacity: 0;
+                            width: 0;
+                            height: 0;
+                        }
+
+                        .slider {
+                            position: absolute;
+                            cursor: pointer;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background-color: white;
+                            border: 1px solid #3F383533;
+                            transition: .4s;
+                            border-radius: 34px;
+                        }
+
+
+                        .slider:before {
+                            position: absolute;
+                            content: "";
+                            height: 26px;
+                            width: 26px;
+                            left: 4px;
+                            bottom: 4px;
+                            background-color: #7EAA92;
+                            transition: .4s;
+                            border-radius: 50%;
+                        }
+
+                        input:focus+.slider {
+                            box-shadow: 0 0 1px #2196F3;
+                        }
+
+                        input:checked+.slider:before {
+                            transform: translateX(26px);
+                        }
+                    }
+                }
+
+                .f_box_1 {
+                    width: 451px;
+                    display: flex;
+                    align-items: start;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 15px;
+                    position: relative;
+                    left: 10px;
+
+                    .vkakomGorode {
+                        width: 431px;
+                        height: 58px;
+                        background: #F8F5F5;
+                        border: 2px solid #3F383526;
+                        cursor: pointer;
+                        border-radius: 8px;
+                        outline: none;
+                    }
+
+                    .tipObyavlenie {
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 22px;
+                        font-family: Lato;
+                        color: #3F3835CC;
+                        gap: 10px;
+                    }
+                }
+
+
+                .f_box_ {
+                    width: 451px;
+                    display: flex;
+                    align-items: start;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 15px;
+                    position: relative;
+                    left: 10px;
+                    display: none;
+
+                    .vkakomGorode {
+                        width: 431px;
+                        height: 58px;
+                        background: #F8F5F5;
+                        border: 2px solid #3F383526;
+                        cursor: pointer;
+                        border-radius: 8px;
+                        outline: none;
+                    }
+
+                    .tipObyavlenie {
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 22px;
+                        font-family: Lato;
+                        color: #3F3835CC;
+                        gap: 10px;
+                    }
+                }
+
+
+                .f_box_2 {
+                    width: 450px;
+                    height: 90px;
+                    display: flex;
+                    align-items: start;
+                    justify-content: start;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    .pol {
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 22px;
+                        font-family: Lato;
+                        color: #3F3835CC;
+                        position: relative;
+                        left: 10px;
+                    }
+
+                    .maleOrFemale {
+                        width: 451px;
+                        display: flex;
+                        align-items: start;
+                        justify-content: space-around;
+
+                        .razniyPolBox {
+                            width: 122px;
+                            height: 54px;
+                            border-radius: 8px;
+                            border: 2px solid #3F383526;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .material-symbols-outlined {
+                                color: #3F3835BF;
+                            }
+
+                            .razniyPol {
+                                font-size: 14px;
+                                line-height: 22px;
+                                font-family: Lato;
+                                font-weight: 400;
+                                color: #3F3835BF;
+                            }
+                        }
+
+                        .malchikBox {
+                            width: 122px;
+                            height: 54px;
+                            border-radius: 8px;
+                            border: 2px solid #3F383526;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .material-symbols-outlined {
+                                color: #3F3835BF;
+                            }
+
+                            .boy {
+                                font-size: 16px;
+                                line-height: 22px;
+                                font-family: Lato;
+                                font-weight: 400;
+                                color: #3F3835BF;
+                            }
+                        }
+
+                        .devochkaBox {
+                            width: 122px;
+                            height: 54px;
+                            border-radius: 8px;
+                            border: 2px solid #3F383526;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .material-symbols-outlined {
+                                color: #3F3835BF;
+                            }
+
+                            .devochka {
+                                font-size: 16px;
+                                line-height: 22px;
+                                font-family: Lato;
+                                font-weight: 400;
+                                color: #3F3835BF;
+                            }
+                        }
+                    }
+                }
+
+
+                .f_box_3 {
+                    width: 450px;
+                    height: 90px;
+                    display: flex;
+                    align-items: start;
+                    justify-content: start;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    .dateBox {
+                        width: 150px;
+                        height: 25px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        position: relative;
+                        left: 10px;
+
+                        .material-symbols-outlined {
+                            color: #3F3835BF;
+                        }
+                    }
+
+                    .dataBox {
+                        width: 450px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+
+                        .mesacDenGod {
+                            width: 342px;
+                            height: 46px;
+                            border-radius: 8px;
+                            border: 2px solid #3F383526;
+                            display: none;
+                            padding: 12px 101px 12px 101px;
+                            background: #F8F5F5;
+                            outline: none;
+                        }
+
+                        .mesacDenGod::placeholder {
+                            color: #3F383599;
+                            font-family: Lato;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 22px;
+                        }
+
+
+                        .day {
+                            width: 112px;
+                            height: 54px;
+                            background-color: #fff;
+                            border: 2px solid #3F383526;
+                            cursor: pointer;
+                            border-radius: 8px;
+                            outline: none;
+                            padding: 16px 18px 16px 18px;
+                            color: #3F383599;
+                            font-family: Lato;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+
+                    }
+
+                    .tipObyavlenie {
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 22px;
+                        font-family: Lato;
+                        color: #3F3835CC;
+                        gap: 10px;
+                    }
+                }
+
+                .f_box_4 {
+                    width: 235px;
+                    height: 95px;
+                    display: flex;
+                    align-items: start;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 15px;
+                    position: relative;
+                    left: 15px;
+
+                    .material-symbols-outlined {
+                        display: none;
+                    }
+
+                    .vkakomGorode {
+                        width: 235px;
+                        height: 58px;
+                        background: #F8F5F5;
+                        border: 2px solid #3F383526;
+                        cursor: pointer;
+                        border-radius: 8px;
+                        outline: none;
+                        padding: 16px 18px 16px 18px;
+                        color: #3F383599;
+                        font-family: Lato;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 22px;
+
+                        input {
+                            width: 235px;
+                            height: 58px;
+                            background: none;
+                            border: none;
+                        }
+                    }
+
+                    .tipObyavlenie {
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 22px;
+                        font-family: Lato;
+                        color: #3F3835CC;
+                        gap: 10px;
+                    }
+                }
+
+
+                .f_box_5 {
+                    width: 451px;
+                    height: 168px;
+                    display: flex;
+                    align-items: start;
+                    justify-content: start;
+                    flex-direction: column;
+                    gap: 15px;
+                    position: relative;
+                    left: 10px;
+
+                    .opisanie {
+                        width: 431px;
+                        height: 131px;
+                        background: #F8F5F5;
+                        border: 2px solid #3F383526;
+                        cursor: pointer;
+                        border-radius: 8px;
+                        outline: none;
+                        padding: 16px 18px 16px 18px;
+                        color: #3F383599;
+                        font-family: Lato;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+
+                    .tipObyavlenie {
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 22px;
+                        font-family: Lato;
+                        color: #3F3835CC;
+                        gap: 10px;
+                    }
+                }
+
+                .f_box_6 {
+                    width: 448px;
+                    height: 63px;
+                    display: flex;
+                    align-items: start;
+                    justify-content: start;
+                    flex-direction: column;
+                    gap: 15px;
+                    position: relative;
+                    left: 15px;
+
+                    .allDocumnetBox {
+                        width: 448px;
+                        display: flex;
+                        align-items: start;
+                        justify-content: space-around;
+                        position: relative;
+                        left: -15px;
+
+
+                        .docBox {
+                            height: 25px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+
+                            label {
+                                height: 25px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-around;
+                                font-size: 14px;
+                                font-family: Lato;
+                                line-height: 22px;
+                                font-weight: 400;
+                                color: #3F383599;
+                                gap: 10px;
+                            }
+
+                            span {
+                                font-size: 14px;
+                                font-family: Lato;
+                                line-height: 22px;
+                                font-weight: 400;
+                                color: #3F383599;
+                            }
+
+
+                            .selectBox {
+                                width: 25px;
+                                height: 25px;
+                                border: 2px solid #3F383580;
+                                border-radius: 8px;
+                            }
+                        }
+                    }
+
+                    .tipObyavlenie {
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 22px;
+                        font-family: Lato;
+                        color: #3F3835CC;
+                        gap: 10px;
+                    }
+                }
+
+
+                .f_box_6Dop {
+                    width: 448px;
+                    height: 63px;
+                    display: flex;
+                    align-items: start;
+                    justify-content: start;
+                    flex-direction: column;
+                    gap: 15px;
+                    position: relative;
+                    left: 15px;
+                    display: none;
+
+                    .allDocumnetBoxDisp {
+                        width: 448px;
+                        display: flex;
+                        align-items: start;
+                        justify-content: space-around;
+                        position: relative;
+                        left: -15px;
+
+
+                        .docBoxDisp {
+                            width: 140px;
+                            height: 25px;
+                            display: flex;
+                            align-items: start;
+                            justify-content: start;
+                            gap: 10px;
+
+
+                            label {
+                                display: flex;
+                                align-items: start;
+                                justify-content: start;
+                                gap: 10px;
+                                font-size: 14px;
+                                font-family: Lato;
+                                line-height: 22px;
+                                font-weight: 400;
+                                color: #3F383599;
+                            }
+
+                            .selectBox {
+                                width: 25px;
+                                height: 25px;
+                                border: 2px solid #3F383580;
+                                border-radius: 8px;
+                            }
+                        }
+                    }
+
+                    .tipObyavlenieDop {
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 22px;
+                        font-family: Lato;
+                        color: #3F3835CC;
+                        gap: 10px;
+                        position: relative;
+                        left: -5px;
+                    }
+                }
+            }
+
+            .rightBox {
+                width: 874px;
+                height: 703px;
+                display: flex;
+                align-items: start;
+                justify-content: center;
+                flex-direction: column;
+                gap: 40px;
+
+
+                .downloadBox {
+                    width: 874px;
+                    height: 567px;
+                    border: 2px solid #3F383533;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    h1 {
+                        font-size: 32px;
+                        font-family: Lato;
+                        font-weight: 500;
+                        line-height: 69px;
+                        letter-spacing: 0.25px;
+                        color: #3F383599;
+                    }
+                }
+
+                .dopolnitelniyAll {
+                    width: 874px;
+                    height: 164px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .dopolniteloneBox {
+                        width: 874px;
+                        height: 164px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .dopolnitelnoeFoto {
+                            width: 258px;
+                            height: 164px;
+                            border: 2px solid #3F383533;
+                            border-radius: 8px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+
+
+                            span {
+                                font-size: 16px;
+                                font-weight: 600;
+                                line-height: 69px;
+                                letter-spacing: 0.25px;
+                                font-family: Lato;
+                                color: #3F383599;
+                            }
+                        }
+                    }
+                }
+
+                .alldaplnitelnoe {
+                    width: 864px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .dapolnitelnoeDannieBox {
+                        width: 439px;
+                        height: 127px;
+
+
+                        .dapolnitelnoeDannieSpan {
+                            font-size: 18px;
+                            font-weight: 500;
+                            font-family: Lato;
+                            line-height: 22px;
+                            color: #3F3835CC;
+                        }
+
+                        .dannieTipe {
+                            width: 439px;
+                            height: 100px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            flex-direction: column;
+
+                            .UpBox {
+                                width: 439px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+
+                                .Tipe {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-around;
+                                    gap: 10px;
+
+
+                                    label {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-around;
+                                        gap: 10px;
+                                        font-family: Lato;
+                                        font-weight: 400;
+                                        font-size: 16px;
+                                        line-height: 22px;
+                                        color: #3F383599;
+                                    }
+                                }
+                            }
+
+                            .downBox {
+                                width: 439px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+
+
+                                .Tipe {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-around;
+                                    gap: 10px;
+
+                                    label {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-around;
+                                        gap: 10px;
+                                        font-family: Lato;
+                                        font-weight: 400;
+                                        font-size: 16px;
+                                        line-height: 22px;
+                                        color: #3F383599;
+                                    }
+                                }
+                            }
+
+                            .selectBox {
+                                width: 25px;
+                                height: 25px;
+                                border: 2px solid #3F383580;
+                                border-radius: 8px;
+                            }
+                        }
+                    }
+                }
+
+                .predpochitanniySposob {
+                    width: 289px;
+                    height: 185px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 10px;
+
+
+                    .selectTextBox {
+                        width: 240px;
+                        height: 22px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        label {
+                            display: flex;
+                            align-items: start;
+                            justify-content: center;
+                            // flex-direction: column;
+                            gap: 10px;
+                        }
+
+                        .TolkoMobilniy {
+                            position: relative;
+                            left: -20px;
+                        }
+
+                        .TolkoSobsheniy {
+                            position: relative;
+                            left: -20px;
+                        }
+
+                        input {
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sozdatObyavlenieBtn {
+            width: 571px;
+            height: 65px;
+            padding: 23px 73px 23px 73px;
+            background: #7EAA92;
+            border: none;
+            border-radius: 8px;
+            color: #FFFFFF;
+            font-size: 18px;
+            font-family: Lato;
+            line-height: 18.4px;
+            letter-spacing: 0.75px;
+            text-align: center;
+        }
+    }
+
+    @include newAnnouncementPage();
+
+
+    footer {
+        width: $width_100_tokos;
+        height: $footer_height;
+        @include flex_start_start();
+        @include flex_column();
+        border-top: 1px solid var(--Color-Main-color-text, #3F3835);
+        background: #F2F2F2;
+
+
+        .footer_all {
+            width: $footer_all_width;
+            @include flexBetween();
+        }
+
+        .text_box_1_foot {
+            @include flex_start_start();
+            @include flex_column();
+
+            img {
+                cursor: pointer;
+            }
+
+            .logo_box_foot {
+                width: 268px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                @include logo_box_foot_position();
+            }
+
+        }
+
+        .text_box_2_foot {
+            width: $text_box_2_foot_width;
+            height: $text_box_2_foot_height;
+            @include flex_center_around();
+
+            .box_4_foot {
+                width: $width_200;
+                height: $box_4_foot_height;
+                @include flexCenter();
+                @include flex_column();
+
+                a {
+                    text-decoration: none;
+
+                    span {
+                        color: $color_dark_3f;
+                        font-family: Lato;
+                        font-size: $font_size_16;
+                        font-style: $font_style_normal;
+                        font-weight: $font_weight_500;
+                        line-height: $line_height_22;
+                    }
+                }
+            }
+
+
+            .box_1_foot {
+                width: $width_200;
+                height: $box_1_foot_height;
+                @include flex_start_start();
+                @include flex_column();
+
+
+                a {
+                    text-decoration: none;
+
+                    span {
+                        color: $color_dark_3f;
+                        font-family: Lato;
+                        font-size: $font_size_16;
+                        font-style: $font_style_normal;
+                        font-weight: $font_weight_500;
+                        line-height: $line_height_22;
+                    }
+                }
+
+
+                .karta_sayta {
+                    color: $color_dark_3f;
+                    font-family: Lato;
+                    font-size: $font_size_18;
+                    font-style: $font_style_normal;
+                    font-weight: $font_weight_600;
+                    line-height: $line_height_22;
+                }
+
+
+            }
+
+
+            .box_2_foot {
+                width: $width_200;
+                height: $height_220;
+                @include flex_start_start();
+                @include flex_column();
+
+                a {
+                    text-decoration: none;
+
+                    span {
+                        color: $color_dark_3f;
+                        font-family: Lato;
+                        font-size: $font_size_16;
+                        font-style: $font_style_normal;
+                        font-weight: $font_weight_500;
+                        line-height: $line_height_22;
+                    }
+
+                }
+
+                .kontakti {
+                    color: $color_dark_3f;
+                    font-family: Lato;
+                    font-size: $font_size_16;
+                    font-style: $font_style_normal;
+                    font-weight: $font_weight_600;
+                    line-height: $line_height_22;
+                }
+            }
+
+            .box_3_foot {
+                width: $width_200;
+                height: $height_220;
+                @include flex_start_start();
+                @include flex_column();
+                gap: $gap_20;
+
+
+                a {
+                    text-decoration: none;
+
+
+                    .na_nashu {
+                        width: $na_nashu_width;
+                    }
+
+                    .prisoedinay {
+                        color: $color_dark_3f;
+                        font-family: Lato;
+                        font-size: $font_size_16;
+                        font-style: $font_style_normal;
+                        font-weight: $font_weight_600;
+                        line-height: $line_height_22;
+                    }
+
+
+                    span {
+                        color: $color_dark_3f;
+                        font-family: Lato;
+                        font-size: $font_size_16;
+                        font-style: $font_style_normal;
+                        font-weight: $font_weight_500;
+                        line-height: $line_height_22;
+                    }
+                }
+
+                form {
+
+                    input {
+                        outline: none;
+                        cursor: pointer;
+                    }
+
+                    .emailFootSvg {
+                        position: relative;
+                        top: -32px;
+                        left: 210px;
+                    }
+                }
+
+                .vvedite_email {
+                    width: $vvedite_email_width;
+                    height: $vvedite_email_height;
+                    border-radius: $border_radius_8;
+                    border: $border_foot;
+                    background: $color_foot;
+                    @include flexBetween();
+                    padding: $padding_20;
+                }
+            }
+        }
+
+    }
+
+    .foot {
+        width: $width_100_tok;
+        height: $foot_height;
+        border-top: $border_top_foot;
+        background: $color_foot;
+        @include flexBetween();
+        padding: $padding_0_50px_0_50px;
+
+
+        .icon {
+            width: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .text_box_2_foot .box_1_foot span {
+            color: $color_dark_3f;
+            font-family: Lato;
+            font-size: $font_size_18;
+            font-style: $font_style_normal;
+            font-weight: $font_weight_600;
+            line-height: $line_height_22;
+        }
+
+
+        a {
+            text-decoration: none;
+
+            span {
+                color: $span_color_rgba;
+                font-family: Poppins;
+                font-size: $font_size_13;
+                font-style: $font_style_normal;
+                font-weight: $font_weight_400;
+                line-height: $line_height_22;
+            }
+        }
+    }
+
+    @include Footer();
+}

@@ -1,0 +1,188 @@
+@import "./mixin_media";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    form {
+        width: 550px;
+        height: 773px;
+        border-radius: 8px;
+        background: #DBE7E2;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        padding: 80px;
+        gap: 20px;
+
+        .registracia {
+            color: var(--color-main-color-text, #3F3835);
+            text-align: center;
+            font-family: Lato;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 187.2%;
+        }
+
+        .adres_elekronoy_pochti {
+            width: 396px;
+            height: 95px;
+
+            .Adres {
+                color: rgba(63, 56, 53, 0.80);
+                font-family: Lato;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 22px;
+            }
+
+            .mail {
+                width: 396px;
+                height: 58px;
+                border-radius: 8px;
+                border: 2px solid rgba(63, 56, 53, 0.15);
+                background: #F8F5F5;
+                padding: 10px;
+                outline: none;
+            }
+        }
+
+        .parol {
+            width: 396px;
+            height: 95px;
+
+            .parol_span {
+                color: rgba(63, 56, 53, 0.80);
+                font-family: Lato;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 22px;
+            }
+
+            .password {
+                width: 396px;
+                height: 58px;
+                border-radius: 8px;
+                border: 2px solid rgba(63, 56, 53, 0.15);
+                background: #F8F5F5;
+                outline: none;
+                padding: 10px;
+            }
+        }
+
+        .zaregistirovat {
+            width: 396px;
+            height: 65px;
+            border-radius: 8px;
+            background: var(--color-main-color-green, #7EAA92);
+            box-shadow: 0px 1px 2px 0px rgba(8, 35, 48, 0.20);
+            color: var(--color-pure-white, #FFF);
+            text-align: center;
+            font-family: Lato;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 18.4px;
+            letter-spacing: 0.75px;
+            border: none;
+        }
+
+        .border_ili {
+            width: 400px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            .border_left {
+                width: 187px;
+                height: 1px;
+                background: rgba(63, 56, 53, 0.20);
+            }
+
+            .border_right {
+                width: 187px;
+                height: 1px;
+                background: rgba(63, 56, 53, 0.20);
+            }
+        }
+
+        .google {
+            width: 396px;
+            height: 58px;
+            border-radius: 8px;
+            border: 2px solid rgba(63, 56, 53, 0.15);
+            background: #F8F5F5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                gap: 10px;
+                color: black;
+            }
+        }
+
+        .apple {
+            width: 396px;
+            height: 58px;
+            border-radius: 8px;
+            border: 2px solid rgba(63, 56, 53, 0.15);
+            background: #F8F5F5;
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                gap: 10px;
+                color: black;
+            }
+        }
+
+        .uje_est {
+            width: 300px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            position: relative;
+            left: 50px;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    @include LoginForm();
+}

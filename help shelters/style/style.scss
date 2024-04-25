@@ -1,0 +1,802 @@
+@import "./variables";
+@import "./mixin_media";
+@import "./mixin";
+@import "./color";
+@import "./fonts";
+
+
+
+* {
+    margin: $zero;
+    padding: $zero;
+    box-sizing: $border_box;
+}
+
+
+main {
+    width: $width_100_tokos;
+    height: auto;
+    @include flex_Center();
+    flex-direction: $flex_column;
+
+    header {
+        width: $width_100_tokos;
+        height: $header_height;
+        border-bottom: $header_border_bottom_2;
+        @include flex_center_between();
+        padding: $padding_50;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        z-index: 1000; 
+        background-color: #ffffff; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        .container {
+            display: none;
+            margin: 0 auto;
+
+            .navbar {
+                min-height: 70px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+                .nav-menu {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0px;
+
+                    li {
+                        list-style: none;
+                    }
+
+                    a {
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .hamburger {
+                display: none;
+                cursor: pointer;
+
+
+                .bar {
+                    display: block;
+                    width: 25px;
+                    height: 3px;
+                    margin: 5px auto;
+                    -webkit-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                    background-color: black;
+                    border-radius: 20px;
+                }
+            }
+
+        }
+
+
+
+        .map_box_header {
+            width: $map_box_header_width;
+            height: $map_box_header_height;
+            @include flex_Center();
+
+            svg {
+                margin: $margin_10;
+            }
+        }
+
+        .logo_box {
+            a {
+                width: $logo_box_width;
+                height: $logo_box_height;
+                @include flex_Center();
+
+                .bar {
+                    margin: $margin_10;
+                }
+            }
+        }
+
+        .btn_header {
+            width: $btn_header_width;
+            height: $btn_header_height;
+            border-radius: $border_radius_8;
+            background: $bg_color_green;
+            color: $color_white;
+            font-family: Lato;
+            font-size: $font_size_16;
+            font-style: $font_style_normal;
+            font-weight: $font_weight_500;
+            line-height: $line_height_22;
+            @include flex_Center();
+            gap: $gap_10;
+            border: $border_none;
+            cursor: $cursor_pointer;
+        }
+
+        .sign_box {
+            width: $sign_box_width;
+            height: $sign_box_height;
+            @include flex_Center();
+            gap: $gap_10;
+
+            .karmir {
+                width: 16.387px;
+                height: 16.387px;
+                background: red;
+                border-radius: 50%;
+                position: relative;
+                right: 23px;
+                bottom: 5px;
+                @include flex_Center();
+
+                span {
+                    color: $color_white;
+                }
+            }
+
+            .dropdown-toggle {
+                width: $dropdown_toggle_width;
+                height: $dropdown_toggle_height;
+                background: none;
+                border: none;
+            }
+        }
+
+        .btn-group .dropdown-menu a {
+            @include flex_Center();
+            color: $color_black;
+        }
+
+        .btn-group .dropdown-menu {
+            width: $dropdown_menu_width;
+            height: $dropdown_menu_height;
+        }
+    }
+
+    .down_header {
+        width: $down_header_width;
+        height: $down_header_height;
+        @include flex_Center();
+        position: fixed;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        z-index: 900; 
+        background-color: #ffffff;
+
+        .menu {
+            width: $menu_width;
+            height: $menu_height;
+            @include flex_center_around();
+
+            a {
+                color: $color_dark_gray;
+                font-family: Lato;
+                font-size: $font_size_16;
+                font-style: $font_style_normal;
+                font-weight: $font_weight_500;
+                line-height: $line_height_22;
+                text-decoration: $text_decoration_none;
+            }
+
+            .pomosh_priutam {
+                color: #7EAA92;
+            }
+        }
+    }
+
+    @include header();
+
+    .first_page {
+        width: 100%;
+        height: 900px;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+
+
+
+        .pom_all {
+            width: 100%;
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            flex-direction: column;
+
+            .pomosh_priutam_glav {
+                width: 205px;
+                height: 69px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                left: 50px;
+
+                a {
+                    text-decoration: none;
+                    color: rgba(89, 79, 75, 0.80);
+                    text-align: center;
+                    font-family: Lato;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 69px;
+                    /* 492.857% */
+                    letter-spacing: 0.25px;
+                }
+            }
+
+            .pochemu_pomosh {
+                width: 650.951px;
+                height: 87.315px;
+                position: relative;
+                left: 50px;
+
+                span {
+                    color: var(--Color-Main-color-text, #3F3835);
+                    font-family: Lato;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 69px;
+                    /* 215.625% */
+                    letter-spacing: 0.25px;
+                }
+            }
+        }
+
+        .pomosh_priutam_p {
+            width: 746px;
+            height: 659px;
+            position: relative;
+            left: 50px;
+
+            p {
+                color: var(--color-color-text-blog-90, rgba(63, 56, 53, 0.90));
+                font-family: Lato;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 186%;
+                /* 37.2px */
+                letter-spacing: 0.7px;
+            }
+        }
+
+        .f_page_right_box {
+            width: 950px;
+            height: 764px;
+            border-radius: 408px 0px 0px 408px;
+            background: linear-gradient(313deg, #59A084 4.58%, #DBE7E2 88.45%);
+
+            img {
+                position: relative;
+                left: 180px;
+                top: 142px;
+            }
+        }
+    }
+
+    @include First_page();
+
+
+    .second_page {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+
+        .kak_mogu_pamoch {
+            width: 292px;
+            height: 69px;
+            color: var(--Color-Main-color-text, #3F3835);
+            font-family: Lato;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 69px;
+            /* 215.625% */
+            letter-spacing: 0.25px;
+        }
+
+        .svg_boxer {
+            width: 1000px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .shrjan {
+                width: 201.914px;
+                height: 201.914px;
+                background: #9ED2BE;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+        }
+
+        .nerqevi_text {
+            width: 1100px;
+            height: 41px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            span {
+                color: var(--Color-Main-color-text, #3F3835);
+                text-align: center;
+                font-family: Lato;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 156%;
+                /* 40.56px */
+                letter-spacing: -0.52px;
+            }
+
+            .kormite{
+                position: relative;
+                left: -30px
+            }
+
+            .pomogayte{
+                position: relative;
+                left: -30px
+            }
+        }
+    }
+
+    @include Second_page();
+
+    .thred_page {
+        width: 100%;
+        height: 2000px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        gap: 30px;
+
+
+        .spisok_priutov {
+            width: 248px;
+            height: 69px;
+            position: relative;
+            left: 50px;
+
+            span {
+                color: var(--Color-Main-color-text, #3F3835);
+                font-family: Lato;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 69px;
+                letter-spacing: 0.25px;
+            }
+        }
+
+        .thred_page_box {
+            width: 1628px;
+            height: 323px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 12px 8px 8px 8px;
+            border-right: 1px solid rgba(63, 56, 53, 0.15);
+            border-left: 1px solid rgba(63, 56, 53, 0.15);
+            border-top: 1px solid rgba(63, 56, 53, 0.15);
+            border-bottom: 1px solid rgba(63, 56, 53, 0.15);
+
+            .boxes1 {
+                width: 357px;
+                height: 271px;
+                display: flex;
+                align-items: start;
+                justify-content: start;
+                flex-direction: column;
+                gap: 20px;
+
+
+                span {
+                    color: var(--Color-for-icons, #6B6664);
+                    text-align: center;
+                    font-family: Lato;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 156%;
+                    letter-spacing: 0.36px;
+                }
+
+                .mesto {
+                    height: 28px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    span {
+                        color: var(--color-main-color-text-75, rgba(63, 56, 53, 0.75));
+                        text-align: center;
+                        font-family: Lato;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 156%;
+                        letter-spacing: -0.36px;
+                    }
+                }
+
+                .glob {
+                    height: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    span {
+                        color: var(--Color-for-icons, #6B6664);
+                        text-align: center;
+                        font-family: Lato;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 156%;
+                        letter-spacing: 0.36px;
+                    }
+                }
+
+                .type {
+                    height: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+
+                    span {
+                        color: var(--color-main-color-text-75, rgba(63, 56, 53, 0.75));
+                        text-align: center;
+                        font-family: Lato;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 156%;
+                        letter-spacing: -0.36px;
+                    }
+                }
+
+                .parod {
+                    height: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    span {
+                        color: var(--color-main-color-text-75, rgba(63, 56, 53, 0.75));
+                        text-align: center;
+                        font-family: Lato;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 156%;
+                        letter-spacing: -0.36px;
+                    }
+                }
+
+                .qanak {
+                    width: 229px;
+                    height: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    span {
+                        color: var(--color-main-color-text-75, rgba(63, 56, 53, 0.75));
+                        text-align: center;
+                        font-family: Lato;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 156%;
+                        letter-spacing: -0.36px;
+                    }
+                }
+            }
+
+            .boxes_2 {
+                width: 535px;
+                height: 265px;
+
+                .istoriya {
+                    width: 154px;
+                    height: 31px;
+
+                    span {
+                        color: var(--Color-Main-color-text, #3F3835);
+                        font-family: Lato;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 156%;
+                    }
+                }
+
+                p {
+                    color: var(--color-main-color-text-75, rgba(63, 56, 53, 0.75));
+                    font-family: Lato;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 180.5%;
+                }
+            }
+
+            .btn_pomoch {
+                width: 119px;
+                height: 45px;
+                border-radius: 8px;
+                border: 1.5px solid var(--Color-Main-color-green, #7EAA92);
+                color: var(--Color-Main-color-green, #7EAA92);
+                text-align: center;
+                font-family: Lato;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 156%;
+                letter-spacing: -0.3px;
+                position: relative;
+                top: 112px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    @include Thred_page();
+
+
+
+
+    footer {
+        width: $width_100_tokos;
+        height: $footer_height;
+        @include flex_start_start();
+        @include flex_column();
+        border-top: 1px solid var(--Color-Main-color-text, #3F3835);
+
+
+        .footer_all {
+            width: $footer_all_width;
+            @include flexBetween();
+        }
+
+        .text_box_1_foot {
+            @include flex_start_start();
+            @include flex_column();
+
+            img {
+                cursor: pointer;
+            }
+
+            .logo_box_foot {
+                width: 268px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                @include logo_box_foot_position();
+            }
+
+        }
+
+        .text_box_2_foot {
+            width: $text_box_2_foot_width;
+            height: $text_box_2_foot_height;
+            @include flex_center_around();
+
+            .box_4_foot {
+                width: $width_200;
+                height: $box_4_foot_height;
+                @include flexCenter();
+                @include flex_column();
+
+
+                
+                a {
+                    text-decoration: none;
+
+                    span {
+                        color: $color_dark_3f;
+                        font-family: Lato;
+                        font-size: $font_size_16;
+                        font-style: $font_style_normal;
+                        font-weight: $font_weight_500;
+                        line-height: $line_height_22;
+                    }
+                }
+            }
+
+
+            .box_1_foot {
+                width: $width_200;
+                height: $box_1_foot_height;
+                @include flex_start_start();
+                @include flex_column();
+
+
+                a {
+                    text-decoration: none;
+
+                    span {
+                        color: $color_dark_3f;
+                        font-family: Lato;
+                        font-size: $font_size_16;
+                        font-style: $font_style_normal;
+                        font-weight: $font_weight_500;
+                        line-height: $line_height_22;
+                    }
+                }
+
+
+                .karta_sayta {
+                    color: $color_dark_3f;
+                    font-family: Lato;
+                    font-size: $font_size_18;
+                    font-style: $font_style_normal;
+                    font-weight: $font_weight_600;
+                    line-height: $line_height_22;
+                }
+
+
+            }
+
+
+            .box_2_foot {
+                width: $width_200;
+                height: $height_220;
+                @include flex_start_start();
+                @include flex_column();
+
+                a {
+                    text-decoration: none;
+
+                    span {
+                        color: $color_dark_3f;
+                        font-family: Lato;
+                        font-size: $font_size_16;
+                        font-style: $font_style_normal;
+                        font-weight: $font_weight_500;
+                        line-height: $line_height_22;
+                    }
+
+                }
+
+                .kontakti {
+                    color: $color_dark_3f;
+                    font-family: Lato;
+                    font-size: $font_size_16;
+                    font-style: $font_style_normal;
+                    font-weight: $font_weight_600;
+                    line-height: $line_height_22;
+                }
+            }
+
+            .box_3_foot {
+                width: $width_200;
+                height: $height_220;
+                @include flex_start_start();
+                @include flex_column();
+                gap: $gap_20;
+
+
+                a {
+                    text-decoration: none;
+
+
+                    .na_nashu {
+                        width: $na_nashu_width;
+                    }
+
+                    .prisoedinay {
+                        color: $color_dark_3f;
+                        font-family: Lato;
+                        font-size: $font_size_16;
+                        font-style: $font_style_normal;
+                        font-weight: $font_weight_600;
+                        line-height: $line_height_22;
+                    }
+
+
+                    span {
+                        color: $color_dark_3f;
+                        font-family: Lato;
+                        font-size: $font_size_16;
+                        font-style: $font_style_normal;
+                        font-weight: $font_weight_500;
+                        line-height: $line_height_22;
+                    }
+                }
+
+                form {
+
+                    input {
+                        outline: none;
+                        cursor: pointer;
+                    }
+
+                    .emailFootSvg {
+                        position: relative;
+                        top: -32px;
+                        left: 210px;
+                    }
+                }
+
+                .vvedite_email {
+                    width: $vvedite_email_width;
+                    height: $vvedite_email_height;
+                    border-radius: $border_radius_8;
+                    border: $border_foot;
+                    background: $color_foot;
+                    @include flexBetween();
+                    padding: $padding_20;
+                }
+            }
+        }
+
+    }
+
+    .foot {
+        width: $width_100_tok;
+        height: $foot_height;
+        border-top: $border_top_foot;
+        background: $color_foot;
+        @include flexBetween();
+        padding: $padding_0_50px_0_50px;
+
+
+        .icon {
+            width: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .text_box_2_foot .box_1_foot span {
+            color: $color_dark_3f;
+            font-family: Lato;
+            font-size: $font_size_18;
+            font-style: $font_style_normal;
+            font-weight: $font_weight_600;
+            line-height: $line_height_22;
+        }
+
+
+        a {
+            text-decoration: none;
+
+            span {
+                color: $span_color_rgba;
+                font-family: Poppins;
+                font-size: $font_size_13;
+                font-style: $font_style_normal;
+                font-weight: $font_weight_400;
+                line-height: $line_height_22;
+            }
+        }
+    }
+
+    @include Footer();
+}

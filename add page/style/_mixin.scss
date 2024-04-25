@@ -1,0 +1,44 @@
+@mixin flex_Center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex_center_between() {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flex_center_around() {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin flex_start_start() {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+@mixin flex_column() {
+    flex-direction: column;
+}
+
+@mixin flexBetween() {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin logo_box_foot_position() {
+    position: relative;
+    left: 50px;
+}
+
+@mixin flexCenter() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

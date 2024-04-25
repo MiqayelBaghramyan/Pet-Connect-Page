@@ -1,0 +1,71 @@
+@mixin LoginForm() {
+    @media screen and (max-width:580px) {
+        form {
+            width: 400px;
+            height: 500px;
+            padding: 0;
+            gap: 10px;
+            position: relative;
+            top: 50px;
+        }
+
+        form .registracia{
+            position: relative;
+            left: 30px;
+        }
+
+        form .adres_elekronoy_pochti{
+            position: relative;
+            left: 30px;
+        }
+
+       form .adres_elekronoy_pochti .mail {
+            width: 300px;
+        }
+        form .parol{
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            flex-direction: column;
+            position: relative;
+            left: 30px;
+        }
+        form .parol .password {
+            width: 300px;
+            padding: 0;
+        }
+
+        form .zaregistirovat{
+            width: 300px;
+            position: relative;
+            left: 30px;
+        }
+
+        form .border_ili{
+            position: relative;
+            left: 0px;
+        }
+        form .border_ili .border_left{
+            width: 120px;
+        }
+        form .border_ili .border_right{
+            width: 120px;
+        }
+
+        form .google{
+            width: 300px;
+            position: relative;
+            left: 30px;
+        }
+        form .apple{
+            width: 300px;
+            position: relative;
+            left: 30px;
+        }
+
+        form .uje_est{
+            position: relative;
+            left: 30px;
+        }
+    }
+}
